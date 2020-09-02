@@ -1,48 +1,121 @@
-body,
-p {
+html {
+	scroll-behavior: smooth;
+
+}
+
+body {
+
 	margin: 0;
 	font-family: sans-serif;
 }
 
-#wrapper {}
-
 #about-me {
-	/*	display: flex;*/
-	/*	flex-direction: column;*/
+	display: flex;
+	align-items: center;
 	justify-content: space-around;
 	padding-top: 1px;
-	font-size: 20px;
-	background-color: #5c5cff;
-	/*	background-image: url('./wall_2.jpg');*/
-	background-size: cover;
-}
-
-#about-me > h1 {
-	font-size: 80px;
-	color: white;
+	min-height: 100vh;
+	color: black;
 
 }
 
-#about-me > * {
-
+#about-me-text {
 	align-self: center;
+	padding-top: 1px;
+	/*	margin: 0px 500px 0px 100px;*/
+	max-width: 50ch;
+	font-size: 20px;
 
 }
 
-.question-container {
+#image-container {
+	align-self: center;
+	width: 400px;
+	height: 263px;
+}
 
-	width: 450px;
-	max-width: 95%;
+#image-container > img {
+	width: 100%;
+}
+
+#technologies {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	min-height: 100vh;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/computer.jpg');
+	background-size: cover;
+
+
+}
+
+#frontend {
+	position: relative;
 	text-align: center;
-	margin-top: 50px;
+	margin-right: 40px;
+	flex-basis: 50ch;
+
 }
 
-.about-me-question {
-	margin-bottom: 20px;
-	display: inline-block;
+#frontend::before {
+	content: '';
+	background-image: url('images/screen.svg');
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: -30px;
+	margin: auto;
+	width: 40px;
+	height: 40px;
+	background-size: cover;
+
 }
 
-.question-container:first-child {
-	margin-top: 100px;
+#backend {
+	position: relative;
+	text-align: center;
+	flex-basis: 50ch;
+
+}
+
+#backend::before {
+	content: '';
+	background-image: url('images/db.svg');
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: -30px;
+	margin: auto;
+	width: 40px;
+	height: 40px;
+	background-size: cover;
+
+
+}
+
+
+#checkout-projects {
+	all: unset;
+	border-radius: 50%;
+	background-color: crimson;
+	width: 100px;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 30px;
+	cursor: pointer;
+	box-shadow: 0 0 5px 0 white;
+}
+
+#checkout-projects:hover {
+	box-shadow: 0 0 20px 0 white;
+
+
+}
+
+#checkout-projects > span {
+	width: min-content;
+	text-align: center;
 
 }

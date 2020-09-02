@@ -4,122 +4,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Gad Laviod's Portfolio</title>
+	<link rel="stylesheet" href="styles.css">
 	<style>
-		html {
-			scroll-behavior: smooth;
-
-		}
-
-		body {
-
-			margin: 0;
-			font-family: sans-serif;
-		}
-
-		#about-me {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			padding-top: 1px;
-			height: 100vh;
-			background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/computer.jpg');
-			background-size: cover;
-			color: white;
-
-		}
-
-		#about-me-text {
-			width: 50ch;
-			max-width: 95%;
-			text-align: center;
-			margin-top: 100px;
-			margin-bottom: 40px;
-
-
-		}
-
-		#technologies {
-			display: flex;
-			justify-content: space-between;
-			width: 600px;
-		}
-
-		#frontend {
-			position: relative;
-			text-align: center;
-			margin-right: 40px;
-			flex-basis: 50%;
-
-		}
-
-		#frontend::before {
-			content: '';
-			background-image: url('images/screen.svg');
-			position: absolute;
-			left: 0;
-			right: 0;
-			top: -30px;
-			margin: auto;
-			width: 40px;
-			height: 40px;
-			background-size: cover;
-
-		}
-
-		#backend {
-			position: relative;
-			text-align: center;
-			flex-basis: 50%;
-
-		}
-
-		#backend::before {
-			content: '';
-			background-image: url('images/db.svg');
-			position: absolute;
-			left: 0;
-			right: 0;
-			top: -30px;
-			margin: auto;
-			width: 40px;
-			height: 40px;
-			background-size: cover;
-
-
-		}
-
-		#about-me-text>h1 {
-			text-transform: capitalize;
-
-		}
-
-		#checkout-projects {
-			all: unset;
-			border-radius: 50%;
-			background-color: crimson;
-			width: 100px;
-			height: 100px;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			margin-top: 30px;
-			cursor: pointer;
-			box-shadow: 0 0 5px 0 white;
-		}
-
-		#checkout-projects:hover {
-			box-shadow: 0 0 20px 0 white;
-
-
-		}
-
-		#checkout-projects>span {
-			width: min-content;
-			text-align: center;
-
-		}
-
-
 		h3 {
 			text-decoration: underline;
 
@@ -150,8 +36,11 @@
 	<div id="about-me">
 
 		<div id="about-me-text">
-			<h1>about me</h1>
 
+			<div>
+				<img src="images/about_me.svg" alt="">
+
+			</div>
 			<p>
 				My name is Gad Laviod and I am a 32 years old self taught full stack web developer.
 				<br><br>
@@ -162,41 +51,48 @@
 			</p>
 
 
+
+
 		</div>
 
-		<div id="technologies">
+		<div id="image-container">
 
-			<div id="frontend">
+			<img src="images/id.svg" alt="">
 
-				<h2>
+		</div>
 
-					Frontend
-				</h2>
+	</div>
 
-				<p>
+	<div id="technologies">
 
-					I can create intricate UI using vanilla js with or without web components.
-					I am relatively new to js frameworks but have a good grasp of reack.
+		<div id="frontend">
 
-				</p>
-			</div>
+			<h2>
 
-			<div id="backend">
+				Frontend
+			</h2>
 
-				<h2>
+			<p>
 
-					Backend
-				</h2>
+				I can create intricate UI using vanilla js with or without web components.
+				I am relatively new to js frameworks but have a good grasp of reack.
 
-				<p>
-					I have used both PHP and Node.js (with express) as server side languages.
-					In terms of databases I have mainly worked with MySQL but have some experience with MongoDB.
+			</p>
+		</div>
+
+		<div id="backend">
+
+			<h2>
+
+				Backend
+			</h2>
+
+			<p>
+				I have used both PHP and Node.js (with express) as server side languages.
+				In terms of databases I have mainly worked with MySQL but have some experience with MongoDB.
 
 
-				</p>
-
-			</div>
-
+			</p>
 
 		</div>
 
@@ -210,6 +106,8 @@
 		</a>
 
 	</div>
+
+
 
 	<div id="projects">
 
