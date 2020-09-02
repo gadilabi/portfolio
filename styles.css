@@ -39,14 +39,25 @@ body {
 }
 
 #technologies {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
 	min-height: 100vh;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/computer.jpg');
 	background-size: cover;
+	padding-top: 1px;
+	color: white;
+	position: relative;
+}
 
+#tech-wrapper {
+	display: flex;
+	/*	flex-wrap: wrap;*/
+	justify-content: space-around;
+	padding-top: 1px;
+}
 
+#technologies > h2 {
+	margin: 40px 0 100px 0;
+	text-align: center;
+	font-size: 50px;
 }
 
 #frontend {
@@ -54,6 +65,12 @@ body {
 	text-align: center;
 	margin-right: 40px;
 	flex-basis: 50ch;
+	font-size: 25px;
+
+}
+
+#frontend > h3 {
+	font-size: 30px;
 
 }
 
@@ -75,6 +92,11 @@ body {
 	position: relative;
 	text-align: center;
 	flex-basis: 50ch;
+	font-size: 25px;
+}
+
+#backend > h3 {
+	font-size: 30px;
 
 }
 
@@ -93,6 +115,13 @@ body {
 
 }
 
+#technologies-button-wrapper {
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	bottom: 20px;
+	width: 100%;
+}
 
 #checkout-projects {
 	all: unset;
