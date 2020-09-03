@@ -180,7 +180,7 @@ class Project extends HTMLElement {
 
 	<style>
 		#card {
-			--color: #fe076e;
+			--color: ${this.color};
 			--card-width: 400px;
 			--img-width: var(--card-width);
 			--img-height: calc(var(--img-width) / 2.1);
@@ -336,6 +336,7 @@ class Project extends HTMLElement {
 		this.frontendTech = this.getAttribute('frontend');
 		this.backendTech = this.getAttribute('backend');
 		this.description = this.getAttribute("description");
+		this.color = this.getAttribute("color");
 		this.embedAttributes();
 
 

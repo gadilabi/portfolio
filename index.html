@@ -5,23 +5,27 @@
 	<meta charset="UTF-8">
 	<title>Gad Laviod's Portfolio</title>
 	<link rel="stylesheet" href="styles.css">
+	<script src="components/project.js"></script>
 	<style>
 		h3 {
 			text-decoration: underline;
 
 		}
 
-		.project-wrapper {
-			/*			margin: 0 20px 20px 20px;*/
-
-		}
-
-		#projects {
-
+		#projects-wrapper {
 			display: grid;
 			grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
 			font-size: 23px;
-			justify-content: center;
+			place-items: center;
+			grid-gap: 10px;
+
+		}
+
+		#projects {}
+
+		app-project {
+
+			width: max-content;
 		}
 
 		.project {}
@@ -116,7 +120,31 @@
 	</div>
 
 
+	<div id="projects">
 
+		<h2>
+			Projects
+
+		</h2>
+
+		<div id="projects-wrapper">
+
+
+
+			<app-project color="#fe076e" project-number="Project 1" live-site="https://avodatova.co.il" img-url="images/avodatova.png" project-name="Job Search Platform" frontend="Vannila js" backend="PHP" description=" This is a job search platform. It allows users to register as job seekers or as recruiters. Job seekers can upload their cv, search for jobs and apply with one click. Recruiters can publish ads, track the number of applicants and download their cvs."></app-project>
+
+			<app-project color="#fe076e" project-number="Project 1" live-site="https://avodatova.co.il" img-url="images/avodatova.png" project-name="Job Search Platform" frontend="Vannila js" backend="PHP" description=" This is a job search platform. It allows users to register as job seekers or as recruiters. Job seekers can upload their cv, search for jobs and apply with one click. Recruiters can publish ads, track the number of applicants and download their cvs."></app-project>
+
+			<app-project color="#fe076e" project-number="Project 1" live-site="https://avodatova.co.il" img-url="images/avodatova.png" project-name="Job Search Platform" frontend="Vannila js" backend="PHP" description=" This is a job search platform. It allows users to register as job seekers or as recruiters. Job seekers can upload their cv, search for jobs and apply with one click. Recruiters can publish ads, track the number of applicants and download their cvs."></app-project>
+
+			<app-project color="#fe076e" project-number="Project 1" live-site="https://avodatova.co.il" img-url="images/avodatova.png" project-name="Job Search Platform" frontend="Vannila js" backend="PHP" description=" This is a job search platform. It allows users to register as job seekers or as recruiters. Job seekers can upload their cv, search for jobs and apply with one click. Recruiters can publish ads, track the number of applicants and download their cvs."></app-project>
+
+		</div>
+
+	</div>
+
+
+	<!--
 	<div id="projects">
 
 		<div class="project" id="project-1">
@@ -125,6 +153,9 @@
 				<h2>
 
 					Project-1: Online Learning Platform
+				</h2>
+				</h2>
+				</h2>
 				</h2>
 
 				<div class="about-project">
@@ -354,6 +385,7 @@
 
 
 	</div>
+-->
 
 </body>
 
