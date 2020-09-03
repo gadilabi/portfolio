@@ -184,11 +184,15 @@ class Project extends HTMLElement {
 			--card-width: 400px;
 			--img-width: var(--card-width);
 			--img-height: calc(var(--img-width) / 2.1);
+			display: flex;
+			flex-direction: column;
 			font-family: arial;
 			width: 400px;
+			height:616px;
 			border: 2px solid black;
 			border-radius: 6px;
 			overflow: hidden;
+			background-color:white;
 
 		}
 
@@ -208,15 +212,27 @@ class Project extends HTMLElement {
 			text-align: center;
 			color: var(--color);
 			margin: 20px;
-			font-size: 20px;
+			font-size: 15px;
 			font-weight: bolder;
 		}
 
+		#project-num{
+			font-size: 20px;
+
+		}
+		
+		#project-name{
+			font-size: 25px;
+
+		}
 
 		#description {
 
-			margin: 40px;
-			color: rgb(50, 50, 50);
+			margin: 20px 40px 20px 40px;
+			color: rgb(100, 100, 100);
+			font-size: 20px;
+			text-align: center;
+			margin-bottom: auto;
 		}
 
 		#links {
@@ -230,6 +246,7 @@ class Project extends HTMLElement {
 
 			all: unset;
 			color: white;
+			font-weight:bold;
 
 
 		}
@@ -301,7 +318,7 @@ class Project extends HTMLElement {
 
 				<div class="tech-header">Backend</div>
 
-				<div>${this.backendTech}</div>
+				<div style="font-size:18px;">${this.backendTech}</div>
 
 			</div>
 			<div id="frontend">
@@ -309,7 +326,7 @@ class Project extends HTMLElement {
 				<div class="tech-header">Frontend</div>
 
 
-				<div>
+				<div style="font-size:18px;">
 					${this.frontendTech}
 
 				</div>

@@ -148,3 +148,30 @@ body {
 	text-align: center;
 
 }
+
+h3 {
+	text-decoration: underline;
+
+}
+
+#projects-wrapper {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	font-size: 23px;
+	place-items: center;
+	grid-gap: 40px;
+	padding-bottom: 40px;
+
+}
+
+#projects {
+
+	background-image: radial-gradient(rgb(100, 100, 100), rgb(0, 0, 0));
+	padding-top: 1px;
+	/*	background-color: #1a1e22;*/
+}
+
+app-project {
+
+	width: max-content;
+}
