@@ -11,7 +11,6 @@ templateProject.innerHTML = `
 			--img-height: calc(var(--img-width) / 2.1);
 			font-family: arial;
 			width: 400px;
-			border: 2px solid black;
 			border-radius: 6px;
 			overflow: hidden;
 
@@ -189,7 +188,6 @@ class Project extends HTMLElement {
 			font-family: arial;
 			width: 400px;
 			height:616px;
-			border: 2px solid black;
 			border-radius: 6px;
 			overflow: hidden;
 			background-color:white;
@@ -242,12 +240,18 @@ class Project extends HTMLElement {
 			justify-content: space-around;
 		}
 
-		#links>a {
+		a {
 
 			all: unset;
 			color: white;
 			font-weight:bold;
+			display:block;
+			flex-basis: 50%;
+			text-align: center;
+		}
 
+		#github-link{
+			border-left: 1px solid rgb(50, 50, 50);
 
 		}
 
@@ -308,10 +312,12 @@ class Project extends HTMLElement {
 
 
 		<div id="links">
+
 			<a id="live-site" href="${this.liveUrl}">
 				Live Site
 			</a>
 
+			${this.gitLink}
 		</div>
 		<div id="technology">
 			<div id="backend">
@@ -350,16 +356,22 @@ class Project extends HTMLElement {
 		this.projectNumber = this.getAttribute("project-number");
 		this.projectName = this.getAttribute("project-name");
 		this.liveUrl = this.getAttribute('live-site');
+		this.gitLink = (this.getAttribute("git-url")) ? this.createLink(this.getAttribute("git-url")) : "";
 		this.frontendTech = this.getAttribute('frontend');
 		this.backendTech = this.getAttribute('backend');
 		this.description = this.getAttribute("description");
 		this.color = this.getAttribute("color");
+
+
 		this.embedAttributes();
 
 
 	}
 
+	createLink(url) {
+		return `<a id="github-link" href="${url}">Github Repo</a>`;
 
+	}
 
 
 }
