@@ -33,6 +33,16 @@ body {
 
 }
 
+#checkout-skills {
+	all: unset;
+	background-color: #189572;
+	color: white;
+	border-radius: 6px;
+	display: inline-block;
+	padding: 5px 10px 5px 10px;
+	cursor: pointer;
+}
+
 #image-container {
 	align-self: center;
 	width: 400px;
@@ -195,7 +205,7 @@ app-project {
 
 	#about-me {
 		flex-direction: column;
-		justify-content: flex-start;
+		justify-content: start;
 		flex-flow: column-reverse;
 		align-content: center;
 		margin: 20px 20px 20px 20px;

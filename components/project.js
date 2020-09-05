@@ -186,7 +186,8 @@ class Project extends HTMLElement {
 			display: flex;
 			flex-direction: column;
 			font-family: arial;
-			width: 100%;
+			width: var(--card-width);
+			max-width: 90vw;
 			height:616px;
 			border-radius: 6px;
 			overflow: hidden;
