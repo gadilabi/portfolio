@@ -186,7 +186,7 @@ class Project extends HTMLElement {
 			display: flex;
 			flex-direction: column;
 			font-family: arial;
-			width: 400px;
+			width: 100%;
 			height:616px;
 			border-radius: 6px;
 			overflow: hidden;
@@ -277,6 +277,14 @@ class Project extends HTMLElement {
 
 		.tech-header {
 			font-weight: bolder;
+
+		}
+
+		@media(max-width: 800px){
+			
+			#card{
+				
+			}
 
 		}
 

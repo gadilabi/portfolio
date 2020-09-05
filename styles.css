@@ -18,6 +18,11 @@ body {
 
 }
 
+#about-me-header {
+
+	max-width: 95%;
+}
+
 #about-me-text {
 	align-self: center;
 	padding-top: 1px;
@@ -158,9 +163,9 @@ h3 {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 	font-size: 23px;
-	place-items: center;
 	grid-gap: 40px;
 	padding-bottom: 40px;
+	justify-content: center;
 
 }
 
@@ -178,10 +183,41 @@ h3 {
 
 #projects-header > img {
 	width: 400px;
-
+	max-width: 95%;
 }
 
 app-project {
+	justify-self: center;
+	max-width: 90vw;
+}
 
-	width: max-content;
+@media(max-width:800px) {
+
+	#about-me {
+		flex-direction: column;
+		justify-content: flex-start;
+		flex-flow: column-reverse;
+		align-content: center;
+		margin: 20px 20px 20px 20px;
+		text-align: center;
+	}
+
+	#about-me-header-container {
+		display: flex;
+		justify-content: center;
+
+	}
+
+	#image-container {
+		max-width: 95%;
+
+	}
+
+	#frontend {
+		font-size: 20px;
+	}
+
+	#backend {
+		font-size: 20px;
+	}
 }
